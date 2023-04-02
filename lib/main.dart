@@ -7,7 +7,8 @@ void main() {
         backgroundColor: Colors.red,
         appBar: AppBar(
           title: const Text('Dice'),
-          backgroundColor: Colors.red,
+          centerTitle: true,
+          backgroundColor: const Color.fromARGB(255, 157, 59, 52),
         ),
         body: const DicePage(),
       ),
@@ -20,6 +21,21 @@ class DicePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Row(
+      children: const [
+        Expanded(
+          flex: 1,
+          child: Image(
+            image: AssetImage('images/dice1.png'),
+          ),
+        ),
+        Expanded(
+          flex: 1,
+          child: Image(
+            image: AssetImage('images/dice1.png'),
+          ),
+        ),
+      ],
+    );
   }
 }
