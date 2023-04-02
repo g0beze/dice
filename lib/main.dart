@@ -7,7 +7,12 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.red,
         appBar: AppBar(
-          title: const Text('Dice'),
+          title: const Text(
+            'Dice',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+            ),
+          ),
           centerTitle: true,
           backgroundColor: const Color.fromARGB(255, 157, 59, 52),
         ),
