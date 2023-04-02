@@ -22,18 +22,12 @@ class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: const [
+      children: [
         Expanded(
-          flex: 1,
-          child: Image(
-            image: AssetImage('images/dice1.png'),
-          ),
+          child: Image.asset('images/dice1.png'),
         ),
         Expanded(
-          flex: 1,
-          child: Image(
-            image: AssetImage('images/dice1.png'),
-          ),
+          child: Image.asset('images/dice2.png'),
         ),
       ],
     );
