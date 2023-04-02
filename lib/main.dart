@@ -9,7 +9,7 @@ void main() {
           title: const Text('Dice'),
           backgroundColor: Colors.red,
         ),
-        body: DicePage(),
+        body: const DicePage(),
       ),
     ),
   );
